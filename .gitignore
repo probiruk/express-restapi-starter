@@ -13,3 +13,6 @@ coverage
 
 # Output
 dist
+
+# Logs
+logs
