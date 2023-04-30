@@ -1,8 +1,6 @@
 {
-    "watch": [
-        "./"
-    ],
-    "ext": ".ts,.js",
-    "ignore": [],
-    "exec": "npx ts-node ./main.ts"
+  "watch": ["./"],
+  "ext": ".ts,.js",
+  "ignore": [],
+  "exec": "npx ts-node ./main.ts"
 }
