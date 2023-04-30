@@ -11,12 +11,13 @@
     "@types/morgan": "^1.9.4",
     "concurrently": "^8.0.1",
     "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "build": "yarn tsc",
-    "start": "node dist/main.js",
-    "dev": "concurrently \"yarn tsc --watch\" \"nodemon -q dist/main.js\""
+    "start": "yarn run build && node dist/main.js",
+    "start:dev": "yarn nodemon",
+    "build": "rimraf ./build && tsc"
   },
   "dependencies": {
     "cors": "^2.8.5",
